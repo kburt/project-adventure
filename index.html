@@ -4,14 +4,17 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
     
 <!--javascript -->
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-database.js"></script>
 
+<!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <title>Welcome to Austin!</title>
+    <title>Bark in the City</title>
   </head>
   <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -23,10 +26,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Contact</a>
+                      <a class="nav-link" data-toggle="modal" role="button" data-target="#exampleModal" href="@getbootstrap">Contact</a>
                     </li>
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -38,7 +41,7 @@
                         <a class="dropdown-item" href="#">Hotels with dogs</a>
                         <a class="dropdown-item" href="#">Outdoors with dogs</a>
                         <a class="dropdown-item" href="#">Shopping with dogs</a>
-                        <a class="dropdown-item" href="#">Adopt a dog!</a>
+                        <a class="dropdown-item" href="#">Adopt a dog!</a>  
                       </div>
                     </li>
                   </ul>
@@ -48,39 +51,88 @@
                   </form>
                 </div>
               </nav>
-
-        <div class="jumbotron">
-
-            <div class="row">
-                    <div class="col">
-                            <img class="img-fluid" src="assets/images/dog_walks_into_a_bar_t1000.jpg" alt="A dog walks into a bar, in Austin.">
-                    </div>
-                    <div class="col">
-                            <img class="img-fluid" src="assets/images/dog-shopping-carts-in-italy-fwx.jpg" alt="Shopping dogs!">
-                    </div>
-                    <div class="col">
-                            <img class="img-fluid" src="assets/images/hotel.jpg" alt="Hotel pup">
+              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Recipient:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                          </div>
+                          <div class="form-group">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Send message</button>
+                      </div>
                     </div>
                   </div>
+                </div>
+        <div class="jumbotron">
+  
+            <div class="row mx-auto">
+                    <div class="col-6 col-sm-4 col-md-4 mb-3">
+                            <img class="img-fluid img-thumbnail" src="assets/images/dog_walks_into_a_bar_t1000.jpg" alt="A dog walks into a bar, in Austin.">
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-4 mb-3">
+                            <img class="img-fluid img-thumbnail" src="assets/images/pooches shopping.jpg" alt="Shopping dogs!">
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-4 mb-3">
+                            <img class="img-fluid img-thumbnail" src="assets/images/hotel.jpg" alt="Hotel pup">
+                    </div>
+                  <!-- </div> -->
 
-                  <div class="row">
-                        <div class="col">
-                                <img class="img-fluid" src="assets/images/adoption.jpg" alt="A cute adopted dog">
+                  <!-- <div class="row"> -->
+                        <div class="col-6 col-sm-4 col-md-4 mb-3">
+                                <img class="img-fluid img-thumbnail" src="assets/images/pooches.jpg" alt="A cute adopted dog">
                         </div>
-                        <div class="col">
-                                <img class="img-fluid" src="assets/images/Dog Park.jpg" alt="Dog park">
+                        <div class="col-6 col-sm-4 col-md-4 mb-3">
+                                <img class="img-fluid img-thumbnail" src="assets/images/Dog Park.jpg" alt="Dog park">
                         </div>
-                        <div class="col">
-                                <img class="img-fluid" src="assets/images/ladybirdlakedog.jpg" alt="A dog soaking up the sun on Lady Bird Lake">
+                        <div class="col-6 col-sm-4 col-md-4 mb-3">
+                                <img class="img-fluid img-thumbnail" src="assets/images/ladybirdlakedog.jpg" alt="A dog soaking up the sun on Lady Bird Lake">
                         </div>
                       </div>
+                    
+                      <style>
+                        body {
+                        background-color: lightblue;
+                        } 
+                        .img-fluid {
+                          max-width: 100%;
+                          height: auto;
+                          height: 225px;
+                      }
+                      img {
+                          width: 300px;
+                          height: 225px;
+                          border: 2px solid rgb(128, 128, 128);
+                      }
+                        
+                        body {
+                          font-family: 'Oswald', sans-serif;
+                        }
+                      </style>
 
         </div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="assets/function.js"></script>
   </body>
 </html>
