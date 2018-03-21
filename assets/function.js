@@ -1,7 +1,43 @@
-<div class="modal-body">
-  <h5>Popover in a modal</h5>
-  <p>This <a href="#" role="button" class="btn btn-secondary popover-test" title="Popover title" data-content="Popover body content is set in this attribute.">button</a> triggers a popover on click.</p>
-  <hr>
-  <h5>Tooltips in a modal</h5>
-  <p><a href="#" class="tooltip-test" title="Tooltip">This link</a> and <a href="#" class="tooltip-test" title="Tooltip">that link</a> have tooltips on hover.</p>
-</div>
+<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBBwnB7OzRkJHH7Wo3qEZ9bqbeQCfxFwbA",
+    authDomain: "project-adventure-7fb38.firebaseapp.com",
+    databaseURL: "https://project-adventure-7fb38.firebaseio.com",
+    projectId: "project-adventure-7fb38",
+    storageBucket: "project-adventure-7fb38.appspot.com",
+    messagingSenderId: "1091190600610"
+  };
+
+  firebase.initializeApp(config);
+           
+        $(function(){
+            let database = firebase.database();
+
+            $("exampleModalLabel").on("submit", function (e) {
+                e.preventDefault();
+
+                let name = $(".name").val();
+                let message =  $(".message").val();
+
+                database.ref("name").set(name)
+                database.ref("message").set(message)
+            }) 
+            
+            database.ref("message").on("value", function(snapshot){
+              let data = snapshot.val();
+
+              $("h1").text(data);
+            })
+
+            database.ref("title").on("value", function(snapshot){
+              let data = snapshot.val();
+
+              $("h2").text(data);
+            })            
+        })       
+</script>
+
+
+
