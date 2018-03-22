@@ -5,10 +5,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Pacifico" rel="stylesheet"> 
+
     
 <!--javascript -->
 <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
+<!-- Linking CSS -->
+<link rel="stylesheet" type="text/css" href="style.css">
 
 <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -17,7 +21,7 @@
   </head>
   <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">Bark in the City</a>
+                <a class="navbar-brand" href="index.html">Bark in the City</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -25,22 +29,22 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                      <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" data-toggle="modal" role="button" data-target="#exampleModal" href="@getbootstrap">Contact</a>
                     </li>
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
+                        Explore
                       </a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Bars and Restaurants with Dogs</a>
-                        <a class="dropdown-item" href="#">Parks with dogs</a>
-                        <a class="dropdown-item" href="#">Hotels with dogs</a>
-                        <a class="dropdown-item" href="#">Outdoors with dogs</a>
-                        <a class="dropdown-item" href="#">Shopping with dogs</a>
-                        <a class="dropdown-item" href="#">Adopt a dog!</a>  
+                        <a class="dropdown-item" href="bars.html">Bars and Restaurants with Dogs</a>
+                        <a class="dropdown-item" href="parks.html">Parks with dogs</a>
+                        <a class="dropdown-item" href="hotels.html">Hotels with dogs</a>
+                        <a class="dropdown-item" href="outdoor.html">Outdoors with dogs</a>
+                        <a class="dropdown-item" href="shopping.html">Shopping with dogs</a>
+                        <a class="dropdown-item" href="adoption.html">Adopt a dog!</a>  
                       </div>
                     </li>
                   </ul>
@@ -81,10 +85,22 @@
                 </div>
               </form>
         <div class="jumbotron">
+
+            <div class="col">
+
+                <h1 id="heading">Bark in the City</h1>
+
+                <img src="assets/images/skylineWords.svg" id="skyline">
+            </div>
+            
+  
           
             <div class="row mx-auto">
                     <div class="col-6 col-sm-4 col-md-4 mb-3">
                             <img class="img-fluid img-thumbnail" src="assets/images/dog_walks_into_a_bar_t1000.jpg" alt="A dog walks into a bar, in Austin.">
+                            <div class="middle">
+                                <div class="text">Bars and Restaurants</div>
+                              </div>
                     </div>
                     <div class="col-6 col-sm-4 col-md-4 mb-3">
                             <img class="img-fluid img-thumbnail" src="assets/images/pooches shopping.jpg" alt="Shopping dogs!">
@@ -118,6 +134,13 @@
                           height: auto;
                           height: 225px;
                       }
+
+                        #skyline {
+                          width: 50%;
+                          height: auto;
+                          
+                          border: none;
+                        }
                       img {
                           width: 300px;
                           height: 225px;
@@ -127,6 +150,7 @@
                         body {
                           font-family: 'Oswald', sans-serif;
                         }
+
                       </style>
 
         </div>
