@@ -8,8 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
     
 <!--javascript -->
-<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
-<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
 
 <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -51,6 +50,7 @@
                   </form>
                 </div>
               </nav>
+          <form>
               <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
@@ -63,22 +63,23 @@
                       <div class="modal-body">
                         <form>
                           <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Recipient:</label>
+                            <label for="recipient-name" name="name" class="name-input">Name:</label>
                             <input type="text" class="form-control" id="recipient-name">
                           </div>
                           <div class="form-group">
-                            <label for="message-text" class="col-form-label">Message:</label>
+                            <label for="message-text" class="message-input">Message:</label>
                             <textarea class="form-control" id="message-text"></textarea>
                           </div>
                         </form>
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Send message</button>
+                        <button type="button" value="submit" class="btn btn-primary">Send message</button>
                       </div>
                     </div>
                   </div>
                 </div>
+              </form>
         <div class="jumbotron">
   
             <div class="row mx-auto">

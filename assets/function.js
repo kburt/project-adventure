@@ -1,6 +1,4 @@
-<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
-<script>
-  // Initialize Firebase
+// Initialize Firebase
   var config = {
     apiKey: "AIzaSyBBwnB7OzRkJHH7Wo3qEZ9bqbeQCfxFwbA",
     authDomain: "project-adventure-7fb38.firebaseapp.com",
@@ -15,11 +13,11 @@
         $(function(){
             let database = firebase.database();
 
-            $("exampleModalLabel").on("submit", function (e) {
+            $("form").on("submit", function (e) {
                 e.preventDefault();
 
-                let name = $(".name").val();
-                let message =  $(".message").val();
+                let name = $(".name-input").val();
+                let message =  $(".message-input").val();
 
                 database.ref("name").set(name)
                 database.ref("message").set(message)
@@ -27,17 +25,8 @@
             
             database.ref("message").on("value", function(snapshot){
               let data = snapshot.val();
-
-              $("h1").text(data);
-            })
-
-            database.ref("title").on("value", function(snapshot){
-              let data = snapshot.val();
-
-              $("h2").text(data);
             })            
-        })       
-</script>
+        })    
 
 
 
