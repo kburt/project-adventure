@@ -1,6 +1,6 @@
 {
   "rules": {
-    ".read": "truel",
+    ".read": "true",
     ".write": "true"
   }
 }
