@@ -1,0 +1,222 @@
+[debug] [2018-03-22T17:50:34.903Z] ----------------------------------------------------------------------
+[debug] [2018-03-22T17:50:34.906Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\edlr7\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-03-22T17:50:34.906Z] CLI Version:   3.17.7
+[debug] [2018-03-22T17:50:34.906Z] Platform:      win32
+[debug] [2018-03-22T17:50:34.906Z] Node Version:  v8.9.4
+[debug] [2018-03-22T17:50:34.906Z] Time:          Thu Mar 22 2018 12:50:34 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-22T17:50:34.906Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-22T17:50:34.911Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-22T17:50:34.911Z] > authorizing via signed-in user
+[debug] [2018-03-22T17:50:34.911Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-03-22T17:50:34.911Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/jSdTRTLe8GfAfDbcPo2IUKQ2BTXImExBxRne0d4kf1g',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Thu Mar 22 2018 12:50:34 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-22T17:50:35.342Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-22T17:50:35.358Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/project-adventure-7fb38  
+  
+ Thu Mar 22 2018 12:50:35 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-22T17:50:36.128Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-22T17:50:36.130Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/project-adventure-7fb38/tokens  
+  
+ Thu Mar 22 2018 12:50:36 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-22T17:50:36.503Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-22T17:50:36.505Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/project-adventure-7fb38  
+  
+ Thu Mar 22 2018 12:50:36 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-22T17:50:36.927Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\edlr7\desktop\project-adventure'...
+[info] 
+[debug] [2018-03-22T17:50:36.958Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1091190600610/clients/_:getWebAppConfig  
+  
+ Thu Mar 22 2018 12:50:36 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-22T17:50:37.464Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-22T17:50:37.522Z] TypeError: Cannot read property 'public' of undefined
+    at Server.<anonymous> (C:\Users\edlr7\AppData\Roaming\npm\node_modules\firebase-tools\lib\serve\hosting.js:34:18)
+    at Object.onceWrapper (events.js:313:30)
+    at emitNone (events.js:106:13)
+    at Server.emit (events.js:208:7)
+    at emitListeningNT (net.js:1378:10)
+    at _combinedTickCallback (internal/process/next_tick.js:135:11)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2018-03-22T17:56:50.462Z] ----------------------------------------------------------------------
+[debug] [2018-03-22T17:56:50.462Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\edlr7\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-03-22T17:56:50.464Z] CLI Version:   3.17.7
+[debug] [2018-03-22T17:56:50.464Z] Platform:      win32
+[debug] [2018-03-22T17:56:50.464Z] Node Version:  v8.9.4
+[debug] [2018-03-22T17:56:50.465Z] Time:          Thu Mar 22 2018 12:56:50 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-22T17:56:50.465Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-22T17:56:50.473Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-22T17:56:50.473Z] > authorizing via signed-in user
+[debug] [2018-03-22T17:56:50.475Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/project-adventure-7fb38  
+  
+ Thu Mar 22 2018 12:56:50 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-22T17:56:51.093Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-22T17:56:51.109Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/project-adventure-7fb38/tokens  
+  
+ Thu Mar 22 2018 12:56:51 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-22T17:56:51.487Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-22T17:56:51.488Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/project-adventure-7fb38  
+  
+ Thu Mar 22 2018 12:56:51 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-22T17:56:51.851Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\edlr7\desktop\project-adventure'...
+[info] 
+[debug] [2018-03-22T17:56:51.876Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1091190600610/clients/_:getWebAppConfig  
+  
+ Thu Mar 22 2018 12:56:51 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-22T17:56:52.382Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-22T17:56:52.424Z] TypeError: Cannot read property 'public' of undefined
+    at Server.<anonymous> (C:\Users\edlr7\AppData\Roaming\npm\node_modules\firebase-tools\lib\serve\hosting.js:34:18)
+    at Object.onceWrapper (events.js:313:30)
+    at emitNone (events.js:106:13)
+    at Server.emit (events.js:208:7)
+    at emitListeningNT (net.js:1378:10)
+    at _combinedTickCallback (internal/process/next_tick.js:135:11)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2018-03-22T19:52:16.842Z] ----------------------------------------------------------------------
+[debug] [2018-03-22T19:52:16.842Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\edlr7\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-03-22T19:52:16.842Z] CLI Version:   3.17.7
+[debug] [2018-03-22T19:52:16.842Z] Platform:      win32
+[debug] [2018-03-22T19:52:16.842Z] Node Version:  v8.9.4
+[debug] [2018-03-22T19:52:16.842Z] Time:          Thu Mar 22 2018 14:52:16 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-22T19:52:16.842Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-22T19:52:16.858Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-22T19:52:16.858Z] > authorizing via signed-in user
+[debug] [2018-03-22T19:52:16.858Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-03-22T19:52:16.858Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/jSdTRTLe8GfAfDbcPo2IUKQ2BTXImExBxRne0d4kf1g',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Thu Mar 22 2018 14:52:16 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-22T19:52:17.112Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-22T19:52:17.128Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/project-adventure-7fb38  
+  
+ Thu Mar 22 2018 14:52:17 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-22T19:52:17.627Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-22T19:52:17.627Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/project-adventure-7fb38/tokens  
+  
+ Thu Mar 22 2018 14:52:17 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-22T19:52:18.118Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-22T19:52:18.118Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/project-adventure-7fb38  
+  
+ Thu Mar 22 2018 14:52:18 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-22T19:52:18.466Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\edlr7\desktop\project-adventure'...
+[info] 
+[debug] [2018-03-22T19:52:18.466Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1091190600610/clients/_:getWebAppConfig  
+  
+ Thu Mar 22 2018 14:52:18 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-22T19:52:19.082Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-22T19:52:19.120Z] TypeError: Cannot read property 'public' of undefined
+    at Server.<anonymous> (C:\Users\edlr7\AppData\Roaming\npm\node_modules\firebase-tools\lib\serve\hosting.js:34:18)
+    at Object.onceWrapper (events.js:313:30)
+    at emitNone (events.js:106:13)
+    at Server.emit (events.js:208:7)
+    at emitListeningNT (net.js:1378:10)
+    at _combinedTickCallback (internal/process/next_tick.js:135:11)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2018-03-22T20:13:06.077Z] ----------------------------------------------------------------------
+[debug] [2018-03-22T20:13:06.079Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\edlr7\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-03-22T20:13:06.079Z] CLI Version:   3.17.7
+[debug] [2018-03-22T20:13:06.079Z] Platform:      win32
+[debug] [2018-03-22T20:13:06.079Z] Node Version:  v8.9.4
+[debug] [2018-03-22T20:13:06.080Z] Time:          Thu Mar 22 2018 15:13:06 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-22T20:13:06.080Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-22T20:13:06.087Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-22T20:13:06.087Z] > authorizing via signed-in user
+[debug] [2018-03-22T20:13:06.089Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/project-adventure-7fb38  
+  
+ Thu Mar 22 2018 15:13:06 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-22T20:13:06.634Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-22T20:13:06.637Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/project-adventure-7fb38/tokens  
+  
+ Thu Mar 22 2018 15:13:06 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-22T20:13:06.971Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-22T20:13:06.972Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/project-adventure-7fb38  
+  
+ Thu Mar 22 2018 15:13:06 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-22T20:13:07.375Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\edlr7\desktop\project-adventure'...
+[info] 
+[debug] [2018-03-22T20:13:07.378Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1091190600610/clients/_:getWebAppConfig  
+  
+ Thu Mar 22 2018 15:13:07 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-22T20:13:07.873Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-22T20:13:07.902Z] TypeError: Cannot read property 'public' of undefined
+    at Server.<anonymous> (C:\Users\edlr7\AppData\Roaming\npm\node_modules\firebase-tools\lib\serve\hosting.js:34:18)
+    at Object.onceWrapper (events.js:313:30)
+    at emitNone (events.js:106:13)
+    at Server.emit (events.js:208:7)
+    at emitListeningNT (net.js:1378:10)
+    at _combinedTickCallback (internal/process/next_tick.js:135:11)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2018-03-22T21:18:32.243Z] ----------------------------------------------------------------------
+[debug] [2018-03-22T21:18:32.246Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\edlr7\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-03-22T21:18:32.246Z] CLI Version:   3.17.7
+[debug] [2018-03-22T21:18:32.246Z] Platform:      win32
+[debug] [2018-03-22T21:18:32.246Z] Node Version:  v8.9.4
+[debug] [2018-03-22T21:18:32.246Z] Time:          Thu Mar 22 2018 16:18:32 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-22T21:18:32.246Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-22T21:18:32.254Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-22T21:18:32.254Z] > authorizing via signed-in user
+[debug] [2018-03-22T21:18:32.255Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-03-22T21:18:32.256Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/jSdTRTLe8GfAfDbcPo2IUKQ2BTXImExBxRne0d4kf1g',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Thu Mar 22 2018 16:18:32 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-22T21:18:33.510Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-22T21:18:33.519Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/project-adventure-7fb38  
+  
+ Thu Mar 22 2018 16:18:33 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-22T21:18:34.497Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-22T21:18:34.498Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/project-adventure-7fb38/tokens  
+  
+ Thu Mar 22 2018 16:18:34 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-22T21:18:36.184Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-22T21:18:36.184Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/project-adventure-7fb38  
+  
+ Thu Mar 22 2018 16:18:36 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-22T21:18:38.360Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\edlr7\desktop\project-adventure'...
+[info] 
+[debug] [2018-03-22T21:18:38.379Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1091190600610/clients/_:getWebAppConfig  
+  
+ Thu Mar 22 2018 16:18:38 GMT-0500 (Central Daylight Time)
+[debug] [2018-03-22T21:18:40.632Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-22T21:18:40.648Z] TypeError: Cannot read property 'public' of undefined
+    at Server.<anonymous> (C:\Users\edlr7\AppData\Roaming\npm\node_modules\firebase-tools\lib\serve\hosting.js:34:18)
+    at Object.onceWrapper (events.js:313:30)
+    at emitNone (events.js:106:13)
+    at Server.emit (events.js:208:7)
+    at emitListeningNT (net.js:1378:10)
+    at _combinedTickCallback (internal/process/next_tick.js:135:11)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+[error] 
+[error] Error: An unexpected error has occurred.
