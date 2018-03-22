@@ -1,0 +1,148 @@
+[debug] [2018-03-08T01:18:10.760Z] ----------------------------------------------------------------------
+[debug] [2018-03-08T01:18:10.762Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\edlr7\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-03-08T01:18:10.762Z] CLI Version:   3.17.5
+[debug] [2018-03-08T01:18:10.762Z] Platform:      win32
+[debug] [2018-03-08T01:18:10.762Z] Node Version:  v8.9.4
+[debug] [2018-03-08T01:18:10.762Z] Time:          Wed Mar 07 2018 19:18:10 GMT-0600 (Central Standard Time)
+[debug] [2018-03-08T01:18:10.762Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-08T01:18:10.770Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-08T01:18:10.770Z] > authorizing via signed-in user
+[debug] [2018-03-08T01:18:10.772Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-03-08T01:18:10.772Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/jSdTRTLe8GfAfDbcPo2IUKQ2BTXImExBxRne0d4kf1g',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Wed Mar 07 2018 19:18:10 GMT-0600 (Central Standard Time)
+[debug] [2018-03-08T01:18:10.957Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-08T01:18:10.969Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/emitdlr-1043a  
+  
+ Wed Mar 07 2018 19:18:10 GMT-0600 (Central Standard Time)
+[debug] [2018-03-08T01:18:11.510Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-08T01:18:11.511Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/emitdlr-1043a/tokens  
+  
+ Wed Mar 07 2018 19:18:11 GMT-0600 (Central Standard Time)
+[debug] [2018-03-08T01:18:11.978Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-08T01:18:11.978Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/emitdlr-1043a  
+  
+ Wed Mar 07 2018 19:18:11 GMT-0600 (Central Standard Time)
+[debug] [2018-03-08T01:18:12.282Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\edlr7\desktop\Coding Bootcamp'...
+[info] 
+[debug] [2018-03-08T01:18:12.328Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/807377597259/clients/_:getWebAppConfig  
+  
+ Wed Mar 07 2018 19:18:12 GMT-0600 (Central Standard Time)
+[debug] [2018-03-08T01:18:12.581Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
+[info] Shutting down...
+[debug] [2018-03-08T02:01:45.392Z] ----------------------------------------------------------------------
+[debug] [2018-03-08T02:01:45.392Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\edlr7\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-03-08T02:01:45.396Z] CLI Version:   3.17.5
+[debug] [2018-03-08T02:01:45.396Z] Platform:      win32
+[debug] [2018-03-08T02:01:45.396Z] Node Version:  v8.9.4
+[debug] [2018-03-08T02:01:45.396Z] Time:          Wed Mar 07 2018 20:01:45 GMT-0600 (Central Standard Time)
+[debug] [2018-03-08T02:01:45.396Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-08T02:01:45.401Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-08T02:01:45.401Z] > authorizing via signed-in user
+[debug] [2018-03-08T02:01:45.401Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/emitdlr-1043a  
+  
+ Wed Mar 07 2018 20:01:45 GMT-0600 (Central Standard Time)
+[debug] [2018-03-08T02:01:45.843Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-08T02:01:45.843Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/emitdlr-1043a/tokens  
+  
+ Wed Mar 07 2018 20:01:45 GMT-0600 (Central Standard Time)
+[debug] [2018-03-08T02:01:46.260Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-08T02:01:46.260Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/emitdlr-1043a  
+  
+ Wed Mar 07 2018 20:01:46 GMT-0600 (Central Standard Time)
+[debug] [2018-03-08T02:01:46.472Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\edlr7\desktop\Coding Bootcamp'...
+[info] 
+[debug] [2018-03-08T02:01:46.481Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/807377597259/clients/_:getWebAppConfig  
+  
+ Wed Mar 07 2018 20:01:46 GMT-0600 (Central Standard Time)
+[debug] [2018-03-08T02:01:46.840Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
+[info] Shutting down...
+[debug] [2018-03-08T02:05:11.052Z] ----------------------------------------------------------------------
+[debug] [2018-03-08T02:05:11.054Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\edlr7\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-03-08T02:05:11.054Z] CLI Version:   3.17.5
+[debug] [2018-03-08T02:05:11.054Z] Platform:      win32
+[debug] [2018-03-08T02:05:11.054Z] Node Version:  v8.9.4
+[debug] [2018-03-08T02:05:11.055Z] Time:          Wed Mar 07 2018 20:05:11 GMT-0600 (Central Standard Time)
+[debug] [2018-03-08T02:05:11.055Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-08T02:05:11.063Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-08T02:05:11.064Z] > authorizing via signed-in user
+[debug] [2018-03-08T02:05:11.065Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-03-08T02:05:11.065Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/jSdTRTLe8GfAfDbcPo2IUKQ2BTXImExBxRne0d4kf1g',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Wed Mar 07 2018 20:05:11 GMT-0600 (Central Standard Time)
+[debug] [2018-03-08T02:05:11.235Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-08T02:05:11.268Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/emitdlr-1043a  
+  
+ Wed Mar 07 2018 20:05:11 GMT-0600 (Central Standard Time)
+[debug] [2018-03-08T02:05:11.583Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-08T02:05:11.584Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/emitdlr-1043a/tokens  
+  
+ Wed Mar 07 2018 20:05:11 GMT-0600 (Central Standard Time)
+[debug] [2018-03-08T02:05:11.959Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-08T02:05:11.968Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/emitdlr-1043a  
+  
+ Wed Mar 07 2018 20:05:11 GMT-0600 (Central Standard Time)
+[debug] [2018-03-08T02:05:12.160Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\edlr7\desktop\Coding Bootcamp'...
+[info] 
+[debug] [2018-03-08T02:05:12.193Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/807377597259/clients/_:getWebAppConfig  
+  
+ Wed Mar 07 2018 20:05:12 GMT-0600 (Central Standard Time)
+[debug] [2018-03-08T02:05:12.491Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
+[debug] [2018-03-08T02:38:12.069Z] ----------------------------------------------------------------------
+[debug] [2018-03-08T02:38:12.071Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\edlr7\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-03-08T02:38:12.071Z] CLI Version:   3.17.5
+[debug] [2018-03-08T02:38:12.071Z] Platform:      win32
+[debug] [2018-03-08T02:38:12.071Z] Node Version:  v8.9.4
+[debug] [2018-03-08T02:38:12.071Z] Time:          Wed Mar 07 2018 20:38:12 GMT-0600 (Central Standard Time)
+[debug] [2018-03-08T02:38:12.072Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-08T02:38:12.079Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-08T02:38:12.079Z] > authorizing via signed-in user
+[debug] [2018-03-08T02:38:12.080Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/emitdlr-1043a  
+  
+ Wed Mar 07 2018 20:38:12 GMT-0600 (Central Standard Time)
+[debug] [2018-03-08T02:38:13.080Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-08T02:38:13.083Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/emitdlr-1043a/tokens  
+  
+ Wed Mar 07 2018 20:38:13 GMT-0600 (Central Standard Time)
+[debug] [2018-03-08T02:38:29.148Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-08T02:38:29.148Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/emitdlr-1043a  
+  
+ Wed Mar 07 2018 20:38:29 GMT-0600 (Central Standard Time)
+[debug] [2018-03-08T02:38:29.368Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\edlr7\desktop\Coding Bootcamp\firebase'...
+[info] 
+[debug] [2018-03-08T02:38:29.388Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/807377597259/clients/_:getWebAppConfig  
+  
+ Wed Mar 07 2018 20:38:29 GMT-0600 (Central Standard Time)
+[debug] [2018-03-08T02:38:29.734Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
