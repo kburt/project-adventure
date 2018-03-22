@@ -1,5 +1,5 @@
 // Initialize Firebase
-  var config = {
+var config = {
     apiKey: "AIzaSyBBwnB7OzRkJHH7Wo3qEZ9bqbeQCfxFwbA",
     authDomain: "project-adventure-7fb38.firebaseapp.com",
     databaseURL: "https://project-adventure-7fb38.firebaseio.com",
@@ -26,7 +26,11 @@
             database.ref("message").on("value", function(snapshot){
               let data = snapshot.val();
             })            
-        })    
+        }) 
 
+var googleAuthkey: "AIzaSyCpDw1Vi7IEodZ7qie2gkxQayvKF_tzS0g";
 
+var searchTerm = "";
+
+var queryURLBase = "https://maps.googleapis.com/maps/api/place/nearbysearch/output?parameters"
 
