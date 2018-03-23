@@ -21,15 +21,15 @@ img.resize {
   }
 
   .col-6:hover .img-fluid {
-    opacity: 0.2;
+    opacity: 0.0;
   }
   
   .col-6:hover .middle {
-    opacity: 4;
+    opacity: 8;
   }
 
   .text {
-    font-size: 18px;
+    font-size: 22px;
     color: #fff;
     
   }
