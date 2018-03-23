@@ -21,11 +21,17 @@ img.resize {
   }
 
   .col-6:hover .img-fluid {
-    opacity: 0.3;
+    opacity: 0.2;
   }
   
   .col-6:hover .middle {
-    opacity: 1;
+    opacity: 4;
+  }
+
+  .text {
+    font-size: 18px;
+    color: #fff;
+    
   }
 
   body {
