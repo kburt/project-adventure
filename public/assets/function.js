@@ -1,4 +1,4 @@
-      // Initialize Firebase
+     // Initialize Firebase
   var config = {
     apiKey: "AIzaSyBBwnB7OzRkJHH7Wo3qEZ9bqbeQCfxFwbA",
     authDomain: "project-adventure-7fb38.firebaseapp.com",
@@ -7,7 +7,7 @@
     storageBucket: "project-adventure-7fb38.appspot.com",
     messagingSenderId: "1091190600610"
   };
-  firebase.initializeApp(config);
+firebase.initializeApp(config);
            
         $(function(){
             let database = firebase.database();
