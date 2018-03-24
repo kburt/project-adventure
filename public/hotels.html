@@ -55,7 +55,7 @@
           </div>
         </nav>
 
-        <div class="jumbotron">
+
             <div class="container">
                 <div class="row">
                     <div class="col-8">
@@ -64,14 +64,71 @@
                             Austin has lots of dog-gone unique options for your pet friendly home away from home. Check out a posh hotel downtown for you and your pup, or get a little cozy in an East Austin AirBnb. Check out the options below for more info.
                         </p>
                     </div>
-                    <div class="col-4">
-                        <h3>My map goes here</h3>
+                    <div class="panel panel-primary">
+                            <div class="row">
+                                    <div class="col-sm-12">
+                                      <br>
+                              
+                                      <!-- This panel will initially be made up of a panel and wells for each of the articles retrieved -->
+                                      <div class="panel panel-primary">
+                              
+                                        <!-- Panel Heading for the retrieved articles box -->
+                                        <div class="panel-heading">
+                                          <h3 class="panel-title"><strong><i class="fa fa-table"></i>Top Articles</strong></h3>
+                                        </div>
+                              
+                                        <!-- This main panel will hold each of the resulting articles -->
+                                        <div class="panel-body" id="well-section">
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                    <div class="col-12">
+                        <h3>            <div style="float: right;">
+                                <div id="map" style="width:300px; height:400px;"></div>
+                            </div>
+                            
+                            <div style="float: left; width: 400;">
+                                <form name="frm_map" id="frm_map"></h3>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
                       <h3>Links here</h3>
-                      <p>Placeholder for API stuff</p>
+                      <p>            <div style="float: left; width: 400;">
+                            <form name="frm_map" id="frm_map">
+                                <table>
+                                    <tr>
+                                        <th>Address</th>
+                                        <td>
+                                            <input type="text" name="address" id="address" value="Austin, Texas">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Radius</th>
+                                        <td>
+                                            <input type="text" name="radius" id="radius" value="10" placeholder="In KM">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Types</th>
+                                        <td>
+                                            <div id="type_holder" style="height: 200px; overflow-y: scroll;">
+                                                <!-- Dynamic Content -->    
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            <input type="button" value="Show" id="submit" onclick="renderMap();">
+                                            <input type="reset" value="Reset">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </div></p>
                     </div>
                   </div>
             </div>
@@ -236,44 +293,6 @@
                 </script>
             </head>
             <body>
-            
-            <div style="float: right;">
-                <div id="map" style="width:300px; height:400px;"></div>
-            </div>
-            
-            <div style="float: left; width: 400;">
-                <form name="frm_map" id="frm_map">
-                    <table>
-                        <tr>
-                            <th>Address</th>
-                            <td>
-                                <input type="text" name="address" id="address" value="Austin, Texas">
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>Radius</th>
-                            <td>
-                                <input type="text" name="radius" id="radius" value="10" placeholder="In KM">
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>Types</th>
-                            <td>
-                                <div id="type_holder" style="height: 200px; overflow-y: scroll;">
-                                    <!-- Dynamic Content -->    
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>
-                                <input type="button" value="Show" id="submit" onclick="renderMap();">
-                                <input type="reset" value="Reset">
-                            </td>
-                        </tr>
-                    </table>
-                </form>
-            </div>
             
             <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCU6bsx-PLT5fW02T5GeiwA8cOOY7l2rU4&libraries=places&callback=initialize" async defer></script>
             <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
