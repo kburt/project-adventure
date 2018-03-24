@@ -20,12 +20,17 @@ img.resize {
     text-align: center;
   }
 
+
   .col-6:hover .img-fluid {
     opacity: 0.0;
   }
   
   .col-6:hover .middle {
     opacity: 8;
+  }
+
+  .col-container {
+    height: 5px;
   }
 
   .text {
@@ -61,6 +66,7 @@ img.resize {
       font-family: 'Pacifico', cursive;
       font-size: 3em;
       letter-spacing: 3px;
+      height: 75px;
     }
 
   

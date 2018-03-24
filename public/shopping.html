@@ -55,7 +55,7 @@
           </div>
         </nav>
 
-        <div class="jumbotron">
+        
             <div class="container">
                 <div class="row">
                     <div class="col-8">
@@ -63,18 +63,56 @@
                         <p>
                             A wide variety of stores around town will keep tails wagging. Boutique shops on the east side welcome pets, and you can even pop into Home Depot with your pup in tow! Here are a few more retail therapy options below...
                     </div>
-                    <div class="col-4">
-                        <h3>My map goes here</h3>
-                    </div>
                 </div>
-                <div class="row">
-                    <div class="col">
-                      <h3>Links here</h3>
-                      <p>Placeholder for API stuff</p>
+
+                    <br>
+
+                    <div class="col-container">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <form name="frm_map" id="frm_map">
+                                        <table>
+                                            <tr>
+                                                <th>Address</th>
+                                                <td>
+                                                    <input type="text" name="address" id="address" value="Austin, Texas">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Radius</th>
+                                                <td>
+                                                    <input type="text" name="radius" id="radius" value="10" placeholder="In KM">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Types</th>
+                                                <td>
+                                                    <div id="type_holder" style="height: 200px; overflow-y: scroll;">
+                                                        <!-- Dynamic Content -->    
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>
+                                                    <input type="button" value="Show" id="submit" onclick="renderMap();">
+                                                    <input type="reset" value="Reset">
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </form>
+                                </div>
+                    
+                            </div>
+                          </div>
                     </div>
-                  </div>
-            </div>
-         </div>
+                    
+                    
+                    <div class="col-md-11">
+                        <div style="float: right;">
+                                <div id="map" style="width:300px; height:400px;"></div>
+                            </div>           
+                    </div>
 
          <style>
             body {
@@ -109,7 +147,7 @@
                     // type_holder
                     // <div><label><input type="checkbox" class="types" value="mosque" />Mosque</label></div>
             
-                    var types = ['accounting','airport','amusement_park','aquarium','art_gallery','atm','bakery','bank','bar','beauty_salon','bicycle_store','book_store','bowling_alley','bus_station','cafe','campground','car_dealer','car_rental','car_repair','car_wash','casino','cemetery','church','city_hall','clothing_store','convenience_store','courthouse','dentist','department_store','doctor','electrician','electronics_store','embassy','fire_station','florist','funeral_home','furniture_store','gas_station','gym','hair_care','hardware_store','hindu_temple','home_goods_store','hospital','insurance_agency','jewelry_store','laundry','lawyer','library','liquor_store','local_government_office','locksmith','lodging','mel_delivery','meal_takeaway','mosque','movie_rental','movie_theater','moving_company','museum','night_club','painter','park','parking','pet_store','pharmacy','physiotherapist','plumber','police','post_office','real_estate_agency','restaurant','roofing_contractor','rv_park','school','shoe_store','shopping_mall','spa','stadium','storage','store','subway_station','synagogue','taxi_stand','train_station','transit_station','travel_agency','university','veterinary_care','zoo'];
+                    var types = ['shopping_mall'];
                     var html = '';
             
                     $.each(types, function( index, value ) {
@@ -234,45 +272,7 @@
                 }
                 </script>
             </head>
-            <body>
-            
-            <div style="float: right;">
-                <div id="map" style="width:300px; height:400px;"></div>
-            </div>
-            
-            <div style="float: left; width: 400;">
-                <form name="frm_map" id="frm_map">
-                    <table>
-                        <tr>
-                            <th>Address</th>
-                            <td>
-                                <input type="text" name="address" id="address" value="Austin, Texas">
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>Radius</th>
-                            <td>
-                                <input type="text" name="radius" id="radius" value="10" placeholder="In KM">
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>Types</th>
-                            <td>
-                                <div id="type_holder" style="height: 200px; overflow-y: scroll;">
-                                    <!-- Dynamic Content -->    
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>
-                                <input type="button" value="Show" id="submit" onclick="renderMap();">
-                                <input type="reset" value="Reset">
-                            </td>
-                        </tr>
-                    </table>
-                </form>
-            </div>
+            <body>  
             
             <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCU6bsx-PLT5fW02T5GeiwA8cOOY7l2rU4&libraries=places&callback=initialize" async defer></script>
             <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
